@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     // Жизненный цикл Activity. Основные View-элементы.
@@ -48,9 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Toast.makeText(MainActivity.this,
-                                    "Нажали на Новая кнопка",
-                                    Toast.LENGTH_SHORT).show();
+                            view.setVisibility(View.GONE);
                         }
                     });
                     LinearLayout.LayoutParams buttonLayoutParams =
