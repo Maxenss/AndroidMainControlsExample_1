@@ -18,7 +18,12 @@
         <activity android:name=".EditTextActivityExample">
         </activity>
         <activity android:name=".ButtonCreateExampleActivity">
-
+        </activity>
+        <activity android:name=".SwitchExampleActivity">
+        </activity>
+        <activity android:name=".TextViewExampleActivity">
+        </activity>
+        <activity android:name=".CheckBoxExampleActivity">
         </activity>
     </application>
 

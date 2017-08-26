@@ -16,13 +16,7 @@ public class MenuActivity extends AppCompatActivity
     Button btStartCheckBoxExample;
     Button btStartTextViewExample;
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
-        setTitle("Выберите пункт меню");
-
+    private void initialize() {
         btStartButtonExample =
                 (Button) findViewById(R.id.btStartButtonExample);
         btStartEditTextActivity =
@@ -33,6 +27,25 @@ public class MenuActivity extends AppCompatActivity
                 (Button) findViewById(R.id.btStartCheckBoxExample);
         btStartTextViewExample =
                 (Button) findViewById(R.id.btStartTextViewExample);
+
+        btStartButtonExample.setOnClickListener(this);
+        btStartEditTextActivity.setOnClickListener(this);
+        btStartSwitchExample.setOnClickListener(this);
+        btStartCheckBoxExample.setOnClickListener(this);
+        btStartTextViewExample.setOnClickListener(this);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_menu);
+        setTitle("Выберите пункт меню");
+
+        try {
+            initialize();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
