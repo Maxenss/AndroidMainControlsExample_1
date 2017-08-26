@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.easylabs.androidmaincontrolsexample_1.MenuActivity">
+
+    <Button
+        android:id="@+id/btStartButtonExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/oval_green_small"
+        android:text="Start Button Example"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btStartEditTextActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/oval_green_small"
+        android:text="Start Edit Text Example"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btStartSwitchExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/oval_green_small"
+        android:text="Start Switch Example"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btStartCheckBoxExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/oval_green_small"
+        android:text="Start CheckBox Example"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btStartTextViewExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/oval_green_small"
+        android:text="Start Text View Example"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

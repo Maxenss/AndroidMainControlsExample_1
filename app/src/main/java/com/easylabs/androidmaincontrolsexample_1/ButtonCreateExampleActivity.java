@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class ButtonCreateExampleActivity extends AppCompatActivity {
     // Жизненный цикл Activity. Основные View-элементы.
     // Button, Switch, TextView, EditView, CheckBox,
     // LinearLayout, ScrollView.
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     // Wrap Content - заполнить столько пространства, что компонент
     //                отображался корректно
 
-    // Домащнее задание : прочитать про Context,
+    // Домащнее задание : прочитать про Context, жизненный цикл Activity
 
     LinearLayout llMainActivity;
     Button btNewButton;
@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        // Указываем какой файл разметки использовать для Activity
+        setContentView(R.layout.activity_button_create_example);
         context = this;
 
         llMainActivity =
@@ -47,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
+                            // Делаем невидимой кнопку с Activity
+                            // VISIBLE - сделать видимым
+                            // INVISIBLE - сделать невидимым
+                            // GONE - сделать невидимым, и убрать отображение
                             view.setVisibility(View.GONE);
                         }
                     });

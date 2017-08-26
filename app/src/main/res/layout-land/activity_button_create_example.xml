@@ -6,12 +6,12 @@
     android:id="@+id/llMainActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.easylabs.androidmaincontrolsexample_1.MainActivity">
+    tools:context="com.easylabs.androidmaincontrolsexample_1.ButtonCreateExampleActivity">
 
     <Button
         android:id="@+id/btNewButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="New Button"/>
 </LinearLayout>
