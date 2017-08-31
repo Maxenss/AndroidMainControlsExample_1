@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.easylabs.androidmaincontrolsexample_1.CheckBoxExampleActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <CheckBox
+        android:id="@+id/cbIsCoordinates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Отслеживать координаты"/>
+
+    <CheckBox
+        android:id="@+id/cbIsNotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Включить уведомление"/>
+
+    <Button
+        android:id="@+id/btShowInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Показать информацию"/>
+</LinearLayout>

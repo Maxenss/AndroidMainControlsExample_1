@@ -19,11 +19,15 @@ public class TextViewExampleActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_view_example);
+        setTitle("TextView Example");
 
         etTextForTextView = (EditText) findViewById(R.id.etTextForTextView);
         textView = (TextView) findViewById(R.id.textView);
         btShowText = (Button) findViewById(R.id.btShowText);
         btToTextView = (Button) findViewById(R.id.btToTextView);
+
+        btShowText.setOnClickListener(this);
+        btToTextView.setOnClickListener(this);
     }
 
     @Override

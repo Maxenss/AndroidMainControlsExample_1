@@ -5,13 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.easylabs.androidmaincontrolsexample_1.SwitchExampleActivity">
+    android:layout_margin="5dp"
+    tools:context="com.easylabs.androidmaincontrolsexample_1.AlertDialogExample">
 
-    <Switch
-        android:id="@+id/switchSetColor"
+    <Button
+        android:id="@+id/btShowDialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_weight="1"
-        android:text="Сделать зеленый фон"/>
+        android:text="Показать AlertDialog"
+        tools:textAllCaps="false"/>
 </LinearLayout>

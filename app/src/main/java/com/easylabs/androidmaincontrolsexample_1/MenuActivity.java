@@ -62,10 +62,19 @@ public class MenuActivity extends AppCompatActivity
                 startActivity(intent);
                 break;
             case R.id.btStartSwitchExample:
+                intent = new Intent(this,
+                        SwitchExampleActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btStartCheckBoxExample:
+                intent = new Intent(this,
+                        CheckBoxExampleActivity.class);
+                startActivity(intent);
                 break;
             case R.id.btStartTextViewExample:
+                intent = new Intent(this,
+                        TextViewExampleActivity.class);
+                startActivity(intent);
                 break;
         }
     }

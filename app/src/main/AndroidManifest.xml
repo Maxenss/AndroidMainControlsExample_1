@@ -25,6 +25,8 @@
         </activity>
         <activity android:name=".CheckBoxExampleActivity">
         </activity>
+        <activity android:name=".AlertDialogExample">
+        </activity>
     </application>
 
 </manifest>
