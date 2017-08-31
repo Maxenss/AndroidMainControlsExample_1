@@ -23,6 +23,7 @@ public class CheckBoxExampleActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_check_box);
+        setTitle("CheckDox Example");
 
         cbIsCoordinates = (CheckBox) findViewById(R.id.cbIsCoordinates);
         cbIsNotify = (CheckBox) findViewById(R.id.cbIsNotify);

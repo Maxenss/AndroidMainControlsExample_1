@@ -15,6 +15,7 @@ public class SwitchExampleActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_switch_example);
+        setTitle("Switch Example");
 
         llMain = (LinearLayout) findViewById(R.id.llMain);
         switchSetColor = (Switch) findViewById(R.id.switchSetColor);

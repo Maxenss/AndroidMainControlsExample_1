@@ -52,4 +52,13 @@
         android:background="@drawable/oval_green_small"
         android:text="Start Text View Example"
         android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btStartAlertDialogExample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/oval_green_small"
+        android:text="Start AlertDialog Example"
+        android:textColor="#FFFFFF"/>
 </LinearLayout>

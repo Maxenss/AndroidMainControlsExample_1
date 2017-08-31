@@ -18,17 +18,18 @@ public class AlertDialogExample extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alert_dialog_example);
+        setTitle("AlertDialog Example");
 
         btShowDialog = (Button) findViewById(R.id.btShowDialog);
         btShowDialog.setOnClickListener(this);
         createAlertDialog();
     }
 
-    private void createAlertDialog(){
+    private void createAlertDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Тайтл Диалога");
         builder.setMessage("Сообщение диалога");
-        builder.setPositiveButton("Позитивная кнопка",
+        builder.setPositiveButton("Да",
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -37,7 +38,7 @@ public class AlertDialogExample extends AppCompatActivity
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
-        builder.setNegativeButton("Отрицательная кнопка",
+        builder.setNegativeButton("Нет",
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
@@ -46,7 +47,7 @@ public class AlertDialogExample extends AppCompatActivity
                                 Toast.LENGTH_SHORT).show();
                     }
                 });
-        builder.setNeutralButton("Нейтральная кнопка",
+        builder.setNeutralButton("Нейтрально",
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

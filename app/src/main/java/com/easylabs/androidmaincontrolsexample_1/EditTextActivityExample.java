@@ -19,7 +19,7 @@ public class EditTextActivityExample extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_text);
-        setTitle("Пример с Edit Text");
+        setTitle("Example EditText");
         mActivity = this;
 
         etTextExample = (EditText) findViewById(R.id.etTextExample);

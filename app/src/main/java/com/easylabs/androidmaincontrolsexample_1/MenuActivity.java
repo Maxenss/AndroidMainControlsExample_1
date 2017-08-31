@@ -14,6 +14,7 @@ public class MenuActivity extends AppCompatActivity
     Button btStartSwitchExample;
     Button btStartCheckBoxExample;
     Button btStartTextViewExample;
+    Button btStartAlertDialogExample;
 
     private void initialize() {
         btStartButtonExample =
@@ -26,12 +27,15 @@ public class MenuActivity extends AppCompatActivity
                 (Button) findViewById(R.id.btStartCheckBoxExample);
         btStartTextViewExample =
                 (Button) findViewById(R.id.btStartTextViewExample);
+        btStartAlertDialogExample =
+                (Button) findViewById(R.id.btStartAlertDialogExample);
 
         btStartButtonExample.setOnClickListener(this);
         btStartEditTextActivity.setOnClickListener(this);
         btStartSwitchExample.setOnClickListener(this);
         btStartCheckBoxExample.setOnClickListener(this);
         btStartTextViewExample.setOnClickListener(this);
+        btStartAlertDialogExample.setOnClickListener(this);
     }
 
     @Override
@@ -74,6 +78,10 @@ public class MenuActivity extends AppCompatActivity
             case R.id.btStartTextViewExample:
                 intent = new Intent(this,
                         TextViewExampleActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.btStartAlertDialogExample:
+                intent = new Intent(this, AlertDialogExample.class);
                 startActivity(intent);
                 break;
         }

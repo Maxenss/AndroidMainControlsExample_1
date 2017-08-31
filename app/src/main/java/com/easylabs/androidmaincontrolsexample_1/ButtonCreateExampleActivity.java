@@ -30,6 +30,7 @@ public class ButtonCreateExampleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         // Указываем какой файл разметки использовать для Activity
         setContentView(R.layout.activity_button_create_example);
+        setTitle("Button Create Example");
         context = this;
 
         llMainActivity =
