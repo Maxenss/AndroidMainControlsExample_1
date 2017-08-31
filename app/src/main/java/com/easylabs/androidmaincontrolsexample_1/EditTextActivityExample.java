@@ -34,6 +34,7 @@ public class EditTextActivityExample extends AppCompatActivity {
             }
         });
 
+        // События изменения текста в EditText
         etTextExample.addTextChangedListener(new TextWatcher() {
             String previousStr;
             String currentStr;
